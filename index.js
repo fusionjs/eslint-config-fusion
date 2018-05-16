@@ -9,6 +9,9 @@ module.exports = {
 
   plugins: ['eslint-plugin-flowtype', 'eslint-plugin-react'],
   rules: {
+    // Enforce flow file declarations
+    'flowtype/require-valid-file-annotation': ['error', 'always'],
+
     // We should be using flow rather than propTypes
     'react/prop-types': 'off',
 
